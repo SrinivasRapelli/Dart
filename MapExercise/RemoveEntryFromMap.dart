@@ -10,12 +10,13 @@ void main() {
 
   print(myMap);
 
-  stdout.write("enter the key to remove: ");
+  print("Enter a key to remove: ");
+
   String keytoRemove = stdin.readLineSync()!;
 
   if (myMap.containsKey(keytoRemove)) {
     myMap.remove(keytoRemove);
-    print('Updated map after removing the key- value: $myMap');
+    print('Updated map after removing the key ($keytoRemove) --> update value: $myMap');
   } else {
     print("Key not found in the map");
   }

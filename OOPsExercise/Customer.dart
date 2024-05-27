@@ -21,7 +21,7 @@ class preferredCustomer extends customer {
 
   @override
   void printDetails() {
-    super.pritnDetails();
+   super.pritnDetails();
     print('Discount rate: $discountRate');
   }
 }

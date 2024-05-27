@@ -4,7 +4,7 @@ class BankAccount {
   double balance;
 
   BankAccount(this.accNumber, this.accHolderName, this.balance);
-void bankDetails() {
+  void bankDetails() {
     print("Account holder name: $accHolderName");
     print("Account number : $accNumber");
   }
@@ -31,11 +31,11 @@ void bankDetails() {
 }
 
 void main() {
-  BankAccount bank = new BankAccount("6512347265482", "Srini", 1000000);
+  BankAccount bank = new BankAccount("6512347265482", "Srini", 0);
    bank.bankDetails();
   bank.displayBalance();
   bank.deposit(0);
    bank.displayBalance();
-  bank.withdraw(210000);
+  bank.withdraw(100);
    bank.displayBalance();
 }

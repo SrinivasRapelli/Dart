@@ -15,11 +15,12 @@ void method1() {
 }
 
 void method2() {
-  List<int> a = [1, 3, 5, 6, 8, 9];
-  int b = 0;
+  List<int> a = [1, 3, 5, 6, 8, 9,10,12,14];
+  List<int> b = [];
+
   for (int i in a) {
     if (i % 2 == 0) {
-      b += i;
+      b.add(i);
     }
   }
   print(b);

@@ -9,13 +9,12 @@ void main(List<String> args) {
   };
   print(myMap);
 
-  stdout.write("Enter a key: ");
+  print("ENter a key");
   String keyToFInd = stdin.readLineSync()!;
 
   if (myMap.containsKey(keyToFInd)) {
     print('value for the key ==>> $keyToFInd is ${myMap[keyToFInd]}');
   } else {
     print("Key is not found");
-    
   }
 }
